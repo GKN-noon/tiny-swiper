@@ -86,3 +86,34 @@ export function stringToElement (
     wrapper.innerHTML = string
     return wrapper.firstChild as HTMLElement
 }
+
+
+export function getSlideChildHeight(el: HTMLElement): number {
+    return Array.from(el.children)
+    .filter((child) => (child as HTMLElement).style.position !== 'absolute')
+    .reduce((totalHeight, child) => totalHeight + (child as HTMLElement).clientHeight, 0);
+}
+
+export function getSlideChildWidth(el: HTMLElement): number {
+    return el.clientWidth;
+}
+
+
+
+/**
+ * 获取数组中指定位置的元素
+ * @param {HTMLElement[]} array 
+ * @param {number} startIndex 
+ * @param {number} count 
+ * @returns {HTMLElement[]}
+ */
+export function getDataFromIndex(array: HTMLElement[], startIndex: number, count: number): HTMLElement[] {
+    const length = array.length;
+    const endIndex = startIndex + count;
+
+    if (startIndex >= length) return [];
+
+    return endIndex <= length
+        ? array.slice(startIndex, endIndex)
+        : array.slice(startIndex).concat(array.slice(0, endIndex % length));
+  }

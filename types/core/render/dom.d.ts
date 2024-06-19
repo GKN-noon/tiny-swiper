@@ -9,3 +9,12 @@ export declare function setStyle(el: HTMLElement, style: {
 }, forceRender?: boolean): HTMLElement;
 export declare function getTranslate(el: HTMLElement, isHorizontal: boolean): number;
 export declare function stringToElement(string: string): HTMLElement;
+export declare function getSlideChildHeight(el: HTMLElement): number;
+/**
+ * 获取数组中指定位置的元素
+ * @param {HTMLElement[]} array
+ * @param {number} startIndex
+ * @param {number} count
+ * @returns {HTMLElement[]}
+ */
+export declare function getDataFromIndex(array: HTMLElement[], startIndex: number, count: number): HTMLElement[];

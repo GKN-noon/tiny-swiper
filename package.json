@@ -1,6 +1,6 @@
 {
-  "name": "tiny-swiper",
-  "version": "2.1.2",
+  "name": "@mourennpmpage/tiny-swiper",
+  "version": "0.0.3",
   "description": "Ingenious JavaScript Carousel powered by wonderful plugins with native-like experience for the web.",
   "main": "lib/index.min.js",
   "module": "lib/index.esm.js",
@@ -8,8 +8,8 @@
   "browser": "lib/index.min.js",
   "jsdelivr": "lib/index.min.js",
   "unpkg": "lib/index.min.js",
-  "repository": "https://github.com/joe223/tiny-swiper.git",
-  "author": "joe223",
+  "repository": "https://github.com/GKN-noon/tiny-swiper.git",
+  "author": "",
   "license": "MIT",
   "private": false,
   "scripts": {

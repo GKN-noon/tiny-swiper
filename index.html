@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--  ~/WorkSpace/tiny-swiper-copy/packages/tiny-swiper/index.html  -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,6 +69,7 @@
       height: auto;
       display: block;
       background: #eee;
+      object-fit: cover;
     }
 
     .placeholder {
@@ -76,9 +77,9 @@
     }
   </style>
 </head>
-
+<!--  ~/WorkSpace/tiny-swiper-copy/packages/tiny-swiper/index.html  -->
 <body>
-  <script src="./lib/index.min.js"></script>
+  <script src="./lib/index.js"></script>
   <script src="./lib/modules/autoHeight.js"></script>
 
   <!-- Slider main container -->
@@ -88,11 +89,11 @@
       <!-- Slides -->
       <div class="swiper-slide">
         <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" />
-        <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" />
+        <!-- <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" /> -->
       </div>
       <div class="swiper-slide">
         <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" />
-        <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" />
+        <!-- <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" /> -->
       </div>
       <div class="swiper-slide">
         <img src="https://i.pinimg.com/236x/0e/a0/34/0ea034dbeb9064df9fb3e68a6965e706.jpg" alt="" />
@@ -104,14 +105,14 @@
       </div>
       <div class="swiper-slide">
         <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" />
-        <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" />
+        <!-- <img src="https://i.pinimg.com/564x/6c/f5/ff/6cf5ff09af4b421bccfd13d442742a9c.jpg" alt="" /> -->
       </div>
       <div class="swiper-slide">
         <img src="https://i.pinimg.com/236x/04/de/12/04de12abe7f96dbe5b8a25eeab26dcb0.jpg" alt="" />
       </div>
       <div class="swiper-slide">
         <img src="https://i.pinimg.com/236x/d6/de/38/d6de38a4e8c36dafafcd2c49723a98d0.jpg" alt="" />
-        <img style="display: none;" src="https://i.pinimg.com/236x/0e/a0/34/0ea034dbeb9064df9fb3e68a6965e706.jpg" alt="" />
+        <!-- <img style="display: none;" src="https://i.pinimg.com/236x/0e/a0/34/0ea034dbeb9064df9fb3e68a6965e706.jpg" alt="" /> -->
       </div>
     </div>
     <!-- If we need pagination -->
@@ -124,33 +125,34 @@
       plugins: [
         SwiperPluginAutoHeight,
       ],
-      // loop: true,
+      loop: true,
       autoHeight: {
         updateOnTransition: true,
-        multiplicative: 2,
+        multiplicative: 1.5,
+        onlyActiveSlide: true,
       },
       initialSlide: 0,
       slidesPerView: 1,
       spaceBetween: 10,
-      breakpointsBase: 'window',
-      breakpoints: {
-        540: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-        1200: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-        },
-        1600: {
-            slidesPerView: 5,
-            spaceBetween: 0,
-        }
-      },
+    //   breakpointsBase: 'window',
+    //   breakpoints: {
+    //     540: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 20,
+    //     },
+    //     768: {
+    //         slidesPerView: 3,
+    //         spaceBetween: 30,
+    //     },
+    //     1200: {
+    //         slidesPerView: 4,
+    //         spaceBetween: 20,
+    //     },
+    //     1600: {
+    //         slidesPerView: 5,
+    //         spaceBetween: 0,
+    //     }
+    //   },
     })
     mySwiper.on('before-slide', ()=>{
         console.log('object => 1');

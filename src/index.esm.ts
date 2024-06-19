@@ -4,6 +4,7 @@ import SwiperPluginKeyboardControl from './modules/keyboardControl'
 import SwiperPluginMousewheel from './modules/mousewheel'
 import SwiperPluginNavigation from './modules/navigation'
 import SwiperPluginBreakpoints from './modules/breakpoints'
+import SwiperPluginAutoHeight  from './modules/autoHeight'
 
 export {
     default
@@ -25,5 +26,6 @@ export {
     SwiperPluginKeyboardControl,
     SwiperPluginMousewheel,
     SwiperPluginNavigation,
-    SwiperPluginBreakpoints
+    SwiperPluginBreakpoints,
+    SwiperPluginAutoHeight,
 }
