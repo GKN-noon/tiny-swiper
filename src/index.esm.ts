@@ -5,6 +5,7 @@ import SwiperPluginMousewheel from './modules/mousewheel'
 import SwiperPluginNavigation from './modules/navigation'
 import SwiperPluginBreakpoints from './modules/breakpoints'
 import SwiperPluginAutoHeight  from './modules/autoHeight'
+import SwiperPluginAutoPlay from './modules/autoPlay'
 
 export {
     default
@@ -28,4 +29,5 @@ export {
     SwiperPluginNavigation,
     SwiperPluginBreakpoints,
     SwiperPluginAutoHeight,
+    SwiperPluginAutoPlay,
 }

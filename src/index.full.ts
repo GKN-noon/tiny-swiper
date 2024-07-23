@@ -8,6 +8,7 @@ import SwiperPluginMousewheel from './modules/mousewheel'
 import SwiperPluginNavigation from './modules/navigation'
 import SwiperPluginBreakpoints from './modules/breakpoints'
 import SwiperPluginAutoHeight from './modules/autoHeight'
+import SwiperPluginAutoPlay from './modules/autoPlay'
 
 const plugins = [
     SwiperPluginAutoHeight,
@@ -16,7 +17,8 @@ const plugins = [
     SwiperPluginKeyboardControl,
     SwiperPluginMousewheel,
     SwiperPluginNavigation,
-    SwiperPluginBreakpoints
+    SwiperPluginBreakpoints,
+    SwiperPluginAutoPlay,
 ]
 
 Swiper.use(plugins as Array<SwiperPlugin>)
