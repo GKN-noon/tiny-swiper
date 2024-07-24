@@ -1,7 +1,15 @@
 import { SwiperPlugin } from '../core/index';
+type Media = {
+    value: number;
+    updateDom: boolean;
+}
+
 export type SwiperPluginAutoHeightOptions = {
     updateOnTransition?: boolean;
     multiplicative?: number;
+    multiplicativeMedia?: {
+        [key: number]: Media;
+    };
     onlyActiveSlide?: boolean;
 };
 export type SwiperPluginAutoHeightInstance = {

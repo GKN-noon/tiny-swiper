@@ -1,6 +1,6 @@
 {
   "name": "@mourennpmpage/tiny-swiper",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "Ingenious JavaScript Carousel powered by wonderful plugins with native-like experience for the web.",
   "main": "lib/index.min.js",
   "module": "lib/index.esm.js",

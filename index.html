@@ -118,8 +118,6 @@
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
   </div>
-
-
   <script>
     var mySwiper = new Swiper('#swiper1', {
       plugins: [
@@ -128,12 +126,20 @@
       loop: true,
       autoHeight: {
         updateOnTransition: true,
-        multiplicative: 1.5,
+        multiplicative: 1,
+        multiplicativeMedia: {
+          768: {
+            value: 1/4,
+            updateDom: true,
+          },
+          1200: {
+            value: 1/2,
+            updateDom: true,
+          },
+        },
         onlyActiveSlide: true,
       },
-      initialSlide: 0,
-      slidesPerView: 1,
-      spaceBetween: 10,
+      initialSlide: 4,
     //   breakpointsBase: 'window',
     //   breakpoints: {
     //     540: {
